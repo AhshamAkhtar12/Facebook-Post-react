@@ -1,0 +1,199 @@
+* {
+  margin: 0%;
+  padding: 0;
+  background-color: black;
+  color: #fff;
+}
+
+h1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  height: auto;
+  width:  auto;
+}
+
+.post-1 {
+  border: 2px solid black;
+  width: 800px;
+  /* height: 600px; */
+  margin: auto;
+}
+
+p {
+  padding: 10px;
+}
+.post-photo-1 {
+  width: 100%;
+}
+
+.dp-1 {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.post-header-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.post-user-detail-1 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.post-display-1 {
+  padding: 10px;
+}
+
+#mainDiv-1 {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer1 {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  border-radius: 10px;
+}
+
+.footer1:hover {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.post-2 {
+  border: 2px solid black;
+  width: 800px;
+  /* height: 600px; */
+  margin: auto;
+}
+
+p {
+  padding: 10px;
+}
+.post-photo-2 {
+  width: 100%;
+}
+
+.dp-2 {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.post-header-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.post-user-detail-2 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.post-display-2 {
+  padding: 10px;
+}
+
+#mainDiv-2 {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer2 {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  border-radius: 10px;
+}
+
+.footer2:hover {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.post-3 {
+  border: 2px solid black;
+  width: 800px;
+  /* height: 600px; */
+  margin: auto;
+}
+
+p {
+  padding: 10px;
+}
+.post-photo-3 {
+  width: 100%;
+}
+
+.dp-3 {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.post-header-3 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.post-user-detail-3 {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.post-display-3 {
+  padding: 10px;
+}
+
+#mainDiv-3 {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer3 {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  border-radius: 10px;
+}
+
+.footer3:hover {
+  background-color: grey;
+  border-radius: 10px;
+}
+.Facebook-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .mnb div {
+      width: 70%;
+      font-size: 20px;
+  }
+}
+
