@@ -1,199 +1,219 @@
+/* Reset some default styles */
 * {
-  margin: 0%;
+  margin: 0;
   padding: 0;
   background-color: black;
   color: #fff;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
 h1 {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   background-color: blue;
-  height: auto;
-  width:  auto;
-}
-
-.post-1 {
-  border: 2px solid black;
-  width: 800px;
-  /* height: 600px; */
-  margin: auto;
-}
-
-p {
   padding: 10px;
-}
-.post-photo-1 {
-  width: 100%;
+  margin-bottom: 20px;
 }
 
-.dp-1 {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-
-.post-header-1 {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding: 10px;
-}
-
-.post-user-detail-1 {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-}
-
-.post-display-1 {
-  padding: 10px;
-}
-
-#mainDiv-1 {
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-}
-.footer1 {
-  cursor: pointer;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  gap: 5px;
-  border-radius: 10px;
-}
-
-.footer1:hover {
-  background-color: grey;
-  border-radius: 10px;
-}
-
-.post-2 {
-  border: 2px solid black;
-  width: 800px;
-  /* height: 600px; */
-  margin: auto;
-}
-
-p {
-  padding: 10px;
-}
-.post-photo-2 {
-  width: 100%;
-}
-
-.dp-2 {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-
-.post-header-2 {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding: 10px;
-}
-
-.post-user-detail-2 {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-}
-
-.post-display-2 {
-  padding: 10px;
-}
-
-#mainDiv-2 {
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-}
-.footer2 {
-  cursor: pointer;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  gap: 5px;
-  border-radius: 10px;
-}
-
-.footer2:hover {
-  background-color: grey;
-  border-radius: 10px;
-}
-
-.post-3 {
-  border: 2px solid black;
-  width: 800px;
-  /* height: 600px; */
-  margin: auto;
-}
-
-p {
-  padding: 10px;
-}
-.post-photo-3 {
-  width: 100%;
-}
-
-.dp-3 {
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
-
-.post-header-3 {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding: 10px;
-}
-
-.post-user-detail-3 {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-}
-
-.post-display-3 {
-  padding: 10px;
-}
-
-#mainDiv-3 {
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-}
-.footer3 {
-  cursor: pointer;
-  padding: 10px;
-  display: flex;
-  justify-content: space-around;
-  gap: 5px;
-  border-radius: 10px;
-}
-
-.footer3:hover {
-  background-color: grey;
-  border-radius: 10px;
-}
+/* Main container */
 .Facebook-main {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 10px;
 }
 
-@media screen and (max-width: 500px) {
-  .mnb div {
-      width: 70%;
-      font-size: 20px;
+/* Common post styles */
+.post-1, .post-2, .post-3 {
+  border: 2px solid black;
+  margin: auto;
+  width: 100%;
+  max-width: 800px; /* Maximum width for large screens */
+  background-color: #333;
+  border-radius: 10px;
+}
+
+p {
+  padding: 10px;
+  font-size: 1rem; /* Default text size */
+}
+
+.post-photo-1, .post-photo-2, .post-photo-3 {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover; /* Ensure images cover their container */
+}
+
+.dp-1, .dp-2, .dp-3 {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.post-header-1, .post-header-2, .post-header-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.post-user-detail-1, .post-user-detail-2, .post-user-detail-3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-dispaly-1, .post-dispaly-2, .post-dispaly-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+#mainDiv-1, #mainDiv-2, #mainDiv-3 {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer1, .footer2, .footer3 {
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.footer1:hover, .footer2:hover, .footer3:hover {
+  background-color: grey;
+}
+
+footer h4 {
+  margin-left: 5px;
+}
+
+/* Media Queries for responsiveness */
+
+/* For devices larger than 768px (tablets and up) */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .post-1, .post-2, .post-3 {
+    width: 75%; /* For larger tablets */
+  }
+
+  .dp-1, .dp-2, .dp-3 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer1, .footer2, .footer3 {
+    font-size: 1rem; /* Slightly larger footer text */
+  }
+
+  p {
+    font-size: 1.1rem; /* Slightly larger text */
   }
 }
+
+/* For devices larger than 1024px (laptops and up) */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .post-1, .post-2, .post-3 {
+    width: 60%; /* For desktops */
+  }
+
+  .dp-1, .dp-2, .dp-3 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer1, .footer2, .footer3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+/* For devices smaller than 768px (smartphones and smaller tablets) */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem; /* Smaller header for small screens */
+  }
+
+  .post-1, .post-2, .post-3 {
+    width: 90%; /* Make posts take up more width */
+  }
+
+  .dp-1, .dp-2, .dp-3 {
+    width: 40px; /* Smaller profile pictures */
+    height: 40px;
+  }
+
+  .footer1, .footer2, .footer3 {
+    font-size: 0.9rem; /* Smaller footer text */
+    padding: 8px;
+  }
+
+  p {
+    font-size: 0.95rem; /* Smaller text for smaller screens */
+  }
+
+  #mainDiv-1, #mainDiv-2, #mainDiv-3 {
+    flex-direction: column;
+    align-items: center; /* Center the footer icons in smaller screens */
+  }
+
+  .post-header-1, .post-header-2, .post-header-3 {
+    flex-direction: column; /* Stack the post header vertically */
+    align-items: flex-start; /* Align left for a better mobile view */
+  }
+
+  .post-user-detail-1, .post-user-detail-2, .post-user-detail-3 {
+    gap: 8px;
+  }
+}
+
+/* For very small devices (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .post-1, .post-2, .post-3 {
+    width: 100%;
+  }
+
+  .dp-1, .dp-2, .dp-3 {
+    width: 35px; /* Even smaller profile pictures for very small devices */
+    height: 35px;
+  }
+
+  .footer1, .footer2, .footer3 {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+
+  p {
+    font-size: 0.85rem; /* Reduce text size even further */
+  }
+
+  #mainDiv-1, #mainDiv-2, #mainDiv-3 {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; /* Center the footer icons */
+  }
+}
+
 
